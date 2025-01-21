@@ -25,6 +25,7 @@ class MainActivity : ComponentActivity() {
     private lateinit var greetingsButton: Button;
     private lateinit var calculatorButton: Button;
     private lateinit var weatherButton: Button;
+    private lateinit var userListButton: Button;
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -34,6 +35,7 @@ class MainActivity : ComponentActivity() {
         greetingsButton = findViewById(R.id.greetingButton);
         calculatorButton = findViewById(R.id.calculatorButton);
         weatherButton = findViewById(R.id.weatherButton);
+        userListButton = findViewById(R.id.userListButton);
 
         greetingsButton.setOnClickListener(){
             val intent1 = Intent(this,GreetingsActivity::class.java);
@@ -48,6 +50,11 @@ class MainActivity : ComponentActivity() {
         weatherButton.setOnClickListener(){
             val intent3 = Intent(this,WeatherActivity::class.java);
             startActivity(intent3);
+        }
+
+        userListButton.setOnClickListener(){
+            val intent4 = Intent(this,UserListActivity::class.java);
+            startActivity(intent4);
         }
 
         //UI elemek inicialiozállása
