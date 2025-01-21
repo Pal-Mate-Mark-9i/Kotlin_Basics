@@ -25,7 +25,7 @@ class WeatherActivity : AppCompatActivity() {
     private lateinit var cityNameInput: EditText;
     private lateinit var fetchDataButton: Button;
     private val APIKEY = "a6f5d257af75203ecbac087c152364d2";
-//valami
+
     private fun fetchWeatherData() {
         val retrofit = Retrofit.Builder().baseUrl("https://api.openweathermap.org/")
             .addConverterFactory(GsonConverterFactory.create()).build();
