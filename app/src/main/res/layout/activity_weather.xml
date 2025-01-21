@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16sp"
+    >
+
+    <EditText
+        android:id="@+id/cityNameInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:hint="Adja meg a város nevét"
+        android:inputType="text"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"
+        />
+
+    <TextView
+        android:id="@+id/TextView_temp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Időjárás Adatokmegjelenítése itt"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"
+        />
+
+    <TextView
+        android:id="@+id/TextView_wind_speed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="szél sebesség Adatokmegjelenítése itt"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"
+        />
+
+    <TextView
+        android:id="@+id/TextView_humidity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="páratartalom Adatokmegjelenítése itt"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"
+        />
+
+    <Button
+        android:id="@+id/fetcDataButon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kérem az adatokat!"
+        android:padding="16dp"
+        android:gravity="center"
+        />
+
+</LinearLayout>
