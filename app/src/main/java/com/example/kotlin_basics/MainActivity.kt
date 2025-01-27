@@ -57,6 +57,11 @@ class MainActivity : ComponentActivity() {
             startActivity(intent4);
         }
 
+        userListButton.setOnClickListener(){
+            val intent5 = Intent(this,RandomUserListActivity::class.java);
+            startActivity(intent5);
+        }
+
         //UI elemek inicialiozállása
 
     }//oncreate

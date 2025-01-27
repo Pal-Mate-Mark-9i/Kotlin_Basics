@@ -12,13 +12,12 @@ import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-
 class RandomUserListActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_random_users);
 
-        private fun fetchRandomUserData() {
+        suspend fun fetchRandomUserData() {
             val retrofit = Retrofit.Builder().baseUrl("https://randomuser.me/api/")
                 .addConverterFactory(GsonConverterFactory.create()).build();
 
@@ -44,25 +43,6 @@ class RandomUserListActivity : AppCompatActivity() {
             });
 
         };//fun vége
-
-        override fun onCreate(savedInstanceState: Bundle?) {
-            super.onCreate(savedInstanceState)
-            enableEdgeToEdge()
-            setContentView(R.layout.activity_weather)
-//        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-//            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-//            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-//            insets
-//        }
-
-            TextViewtemp = findViewById(R.id.TextView_temp);
-            TextView_wind_speed = findViewById(R.id.TextView_wind_speed);
-            TextView_humidity = findViewById(R.id.TextView_humidity);
-            cityNameInput = findViewById(R.id.cityNameInput);
-            fetchDataButton = findViewById(R.id.fetcDataButon)
-            fetchDataButton.setOnClickListener() { fetchWeatherData() };
-
-        }
 
 //        val recyclerView: RecyclerView = findViewById(R.id.userRecycleView)
 //        recyclerView.layoutManager = LinearLayoutManager(this)
