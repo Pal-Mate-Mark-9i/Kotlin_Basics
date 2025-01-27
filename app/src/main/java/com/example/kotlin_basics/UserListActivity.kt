@@ -14,12 +14,15 @@ class UserListActivity : AppCompatActivity() {
 
 
         val users = listOf(
+            User("Aipsz Jakab","g@mail.hu",R.drawable.user),
+            User("Bipsz Jakab","g@mail.hu",R.drawable.user),
+            User("Cipsz Jakab","g@mail.hu",R.drawable.user),
+            User("Dipsz Jakab","g@mail.hu",R.drawable.user),
+            User("Eipsz Jakab","g@mail.hu",R.drawable.user),
+            User("Fipsz Jakab","g@mail.hu",R.drawable.user),
             User("Gipsz Jakab","g@mail.hu",R.drawable.user),
-            User("Gipsz Jakab","g@mail.hu",R.drawable.user),
-            User("Gipsz Jakab","g@mail.hu",R.drawable.user),
-            User("Gipsz Jakab","g@mail.hu",R.drawable.user),
-            User("Gipsz Jakab","g@mail.hu",R.drawable.user),
-            User("Gipsz Jakab","g@mail.hu",R.drawable.user),
+            User("Hipsz Jakab","g@mail.hu",R.drawable.user),
+            User("Jipsz Jakab","g@mail.hu",R.drawable.user),
         )
 
         val recyclerView: RecyclerView = findViewById(R.id.userRecycleView)
