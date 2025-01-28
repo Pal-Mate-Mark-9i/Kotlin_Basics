@@ -9,11 +9,11 @@ import retrofit2.http.Query
 
 interface randomUserService {
     @GET("/api/")
-    suspend fun getRandomUsers(
+    fun getRandomUsers(
         @Query("results") results: Int,
         /*@Query("name") name: String,
         @Query("email") email: String,
         @Query("picture") picture: String,
         @Query("country") country: String,*/
-    ): RandomUserResponse;
+    ): Call<RandomUserResponse>;
 }
