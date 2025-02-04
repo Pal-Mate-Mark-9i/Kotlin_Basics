@@ -20,11 +20,6 @@ class RandomUserListActivity : AppCompatActivity() {
         setContentView(R.layout.activity_random_users);
 
         fetchRandomUserData();
-
-/*        val recyclerView: RecyclerView = findViewById(R.id.userRecycleView)
-        recyclerView.layoutManager = LinearLayoutManager(this)
-        recyclerView.adapter = UserAdapter(users);
-*/
     }
 
     fun fetchRandomUserData() {
@@ -41,8 +36,7 @@ class RandomUserListActivity : AppCompatActivity() {
             ) {
                 if (response.isSuccessful) {
                     val RandomUserResponse = response.body();
-                    if (RandomUserResponse != null) {
-                        Log.e("Eredmény: " , RandomUserResponse.results.toString())
+                    if (RandomUserResponse != null) { Log.e("Eredmény: ", RandomUserResponse.results.toString())
                     }
                 }
             }
