@@ -74,4 +74,7 @@ dependencies {
     implementation(libs.retrofit)
     implementation(libs.retrofit.gson)
     implementation(libs.okhttp)
+    //feb04 : Képek megjelenítése
+    implementation(libs.glide)
+    implementation(libs.glide.compiler)
 }
