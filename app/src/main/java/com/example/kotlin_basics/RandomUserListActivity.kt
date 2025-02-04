@@ -3,11 +3,14 @@ package com.example.kotlin_basics
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.kotlin_basics.adapter.RandomUserAdapter
 import com.example.kotlin_basics.adapter.UserAdapter
 import com.example.kotlin_basics.model.RandomUserResponse
 import com.example.kotlin_basics.network.randomUserService
+import kotlinx.coroutines.launch
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -19,7 +22,21 @@ class RandomUserListActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_random_users);
 
-        fetchRandomUserData();
+        val recyclerView: RecyclerView = findViewById(R.id.randomUserListRecyclerView)
+        recyclerView.layoutManager = LinearLayoutManager(this);
+
+        lifecycleScope.launch {
+            try {
+                val randomUsers = fetchRandomUserData();
+                if(!randomUsers.isNullOrEmpty()){
+                    recyclerView.adapter = RandomUserAdapter(randomUsers);
+                }
+            } catch (e:Exception){
+                Log.e("Exception keletkezett:RandomUserListActivity")
+            }
+
+        }
+
     }
 
     fun fetchRandomUserData() {

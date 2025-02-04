@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.example.kotlin_basics.R
 import com.example.kotlin_basics.model.User
 
@@ -31,6 +32,12 @@ class RandomUserAdapter(private val userList: List<User>) :
         holder.nameText.text = user.name.first + " " + user.name.last;
         holder.emailText.text = user.email;
         holder.countryText.text = user.Location.country;
+
+        Glide.with(holder.itemView.context)
+            .load(user.picture.medium)
+            .placeholder(R.drawable.ic_launcher_background)
+            .error(R.drawable.ic_launcher_background)
+            .into(holder.profileImage)
     }
 
     override fun getItemCount() = userList.size;
