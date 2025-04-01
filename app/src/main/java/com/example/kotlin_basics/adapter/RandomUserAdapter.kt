@@ -1,5 +1,5 @@
-package com.example.kotlin_basics.adapter
-
+//package com.example.kotlin_basics.adapter
+/*
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -43,3 +43,4 @@ class RandomUserAdapter(private val userList: List<User>) :
     override fun getItemCount() = userList.size;
 
 }
+*/

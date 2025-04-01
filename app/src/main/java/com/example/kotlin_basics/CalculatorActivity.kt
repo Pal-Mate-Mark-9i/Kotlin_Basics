@@ -1,5 +1,5 @@
-package com.example.kotlin_basics
-
+//package com.example.kotlin_basics
+/*
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -33,4 +33,4 @@ class CalculatorActivity : AppCompatActivity() {
         }
 
     }
-}
+}*/

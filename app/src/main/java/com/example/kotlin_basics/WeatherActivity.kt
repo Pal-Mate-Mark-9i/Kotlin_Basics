@@ -1,5 +1,5 @@
-package com.example.kotlin_basics
-
+//package com.example.kotlin_basics
+/*
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
@@ -77,3 +77,4 @@ class WeatherActivity : AppCompatActivity() {
     }
 
 }
+*/

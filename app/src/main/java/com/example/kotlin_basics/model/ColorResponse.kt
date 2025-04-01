@@ -1,14 +1,14 @@
-package com.example.kotlin_basics.model
-
+//package com.example.kotlin_basics.model
+/*
 data class ColorResponse(
     val data:List<Color>
 )
 
 data class Color(
-    val id:Integer,
+    val id:Int,
     val name:String,
-    val year:Integer,
+    val year:Int,
     val color:String,
     val pantone_value:String
-)
+)*/
 

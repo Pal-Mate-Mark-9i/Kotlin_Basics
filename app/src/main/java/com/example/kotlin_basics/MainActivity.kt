@@ -32,7 +32,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
-
+        /*
         greetingsButton = findViewById(R.id.greetingButton);
         calculatorButton = findViewById(R.id.calculatorButton);
         weatherButton = findViewById(R.id.weatherButton);
@@ -65,6 +65,8 @@ class MainActivity : ComponentActivity() {
         }
 
         //UI elemek inicialiozállása
-
+    */
+        val intent1 = Intent(this,BeersListActivity::class.java);
+        startActivity(intent1);
     }//oncreate
 }//class

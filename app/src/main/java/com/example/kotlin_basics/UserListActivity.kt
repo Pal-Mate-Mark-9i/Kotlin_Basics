@@ -1,5 +1,5 @@
-package com.example.kotlin_basics
-
+//package com.example.kotlin_basics
+/*
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -30,4 +30,4 @@ class UserListActivity : AppCompatActivity() {
         recyclerView.adapter = UserAdapter(users);
 
     }
-}
+}*/

@@ -1,5 +1,6 @@
-package com.example.kotlin_basics.adapter;
-
+//package com.example.kotlin_basics.adapter;
+/*
 public class ColorAdapter {
 
 }
+*/

@@ -1,5 +1,5 @@
-package com.example.kotlin_basics.model
-
+//package com.example.kotlin_basics.model
+/*
 data class RandomUserResponse(
     val results: List<RUser>,
 )
@@ -26,3 +26,4 @@ data class Picture(
 data class Location(
     val country: String,
 )
+*/

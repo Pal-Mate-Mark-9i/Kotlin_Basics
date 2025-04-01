@@ -1,5 +1,5 @@
-package com.example.kotlin_basics.model
-
+//package com.example.kotlin_basics.model
+/*
 data class WeatherResponse (
     val main: Main,
     val wind: Wind,
@@ -14,3 +14,4 @@ data class Wind(
     val speed:Float,
 )
 
+*/

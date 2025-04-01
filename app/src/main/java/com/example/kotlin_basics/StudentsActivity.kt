@@ -1,5 +1,5 @@
-package com.example.kotlin_basics
-
+//package com.example.kotlin_basics
+/*
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -17,4 +17,4 @@ class StudentsActivity : AppCompatActivity() {
             insets
         }
     }
-}
+}*/

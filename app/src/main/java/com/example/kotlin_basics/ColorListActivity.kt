@@ -1,5 +1,5 @@
-package com.example.kotlin_basics
-
+//package com.example.kotlin_basics
+/*
 import android.os.Bundle
 import android.util.Log
 import androidx.activity.enableEdgeToEdge
@@ -31,7 +31,7 @@ class ColorListActivity : AppCompatActivity() {
 
             val call = colorService;
 
-            call.enqueue(object : Callback<ColorResponse::class.java > {
+            call.enqueue(object : <Callback<ColorResponse::class.java> {
                 override fun onResponse(
                     call: Call<ColorResponse>,
                     response: Response<ColorResponse>
@@ -54,4 +54,4 @@ class ColorListActivity : AppCompatActivity() {
         }
 
     }
-}
+}*/

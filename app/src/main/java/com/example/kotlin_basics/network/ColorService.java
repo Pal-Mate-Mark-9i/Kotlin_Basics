@@ -1,5 +1,5 @@
-package com.example.kotlin_basics.network;
-
+//package com.example.kotlin_basics.network;
+/*
 import com.example.kotlin_basics.model.ColorResponse;
 import retrofit2.Call;
 import retrofit2.http.GET;
@@ -11,4 +11,4 @@ interface ColorService {
         @Query()
     ): Call<ColorResponse>;
 
-}
+}*/

@@ -1,5 +1,5 @@
-package com.example.kotlin_basics.adapter
-
+//package com.example.kotlin_basics.adapter
+/*
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.appcompat.view.menu.MenuView.ItemView
@@ -38,4 +38,4 @@ class StudentAdapter(private val studentList: List<Student>) :
 
     override fun getItemCount() = userList.size;
 
-}
+}*/

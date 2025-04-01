@@ -1,5 +1,5 @@
-package com.example.kotlin_basics
-
+//package com.example.kotlin_basics
+/*
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
@@ -39,7 +39,7 @@ class RandomUserListActivity : AppCompatActivity() {
 
     }
 
-    fun fetchRandomUserData() {
+    suspend fun fetchRandomUserData() {
         val retrofit = Retrofit.Builder().baseUrl("https://randomuser.me/api/")
             .addConverterFactory(GsonConverterFactory.create()).build();
 
@@ -65,4 +65,4 @@ class RandomUserListActivity : AppCompatActivity() {
 
     };//fun vége
 
-}
+}*/
